@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Adivinator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list >
+       <ion-item>
+            <ion-label floating>Insert CURP please</ion-label> 
+            <ion-input type="text" [(ngModel)]="curp"></ion-input>
+       </ion-item>
+  </ion-list>
+  <div>
+    <button ion-button primary block (click)="gender()">Adivinar</button>
+  </div>
+</ion-content>
